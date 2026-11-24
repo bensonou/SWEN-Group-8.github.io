@@ -8,19 +8,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&display=swap" rel="stylesheet">
+    <link href="../style.css" rel="stylesheet">
     <title>FruadFile - Forum + Data Submission</title>
 </head>
 
-<body style="background-color: #F0E0D6; display: flex; justify-content: center; align-items: center; gap: 20px; min-height: 85vh; margin: 0; padding: 10px; box-sizing: border-box; overflow-x: hidden;">
-    <!-- Logo CLICKABLE LINK TO HOME PAGE-->
-    <a href="#Home">
-        <h1 style="position: absolute; top: 15px; left: 20px; font-family: 'Inter', sans-serif; font-size: 28px; color: black; margin: 0;">
-            FraudFiles<sup style="font-size: 12px;">TM</sup>
-        </h1>
-    </a>
+<body style="background-color: #F0E0D6;">
+    <nav class="navbar">
+        <h2 href="" class="home">THE FRAUD FILES</h2>
+        <div class="navbarDIV"> 
+            <a class = "navbarA" href="../User Interaction/account.html">Account</a>
+            <a class = "navbarA" href="../Information Support\Forum.html">Forum</a>
+            <a class = "navbarA" href="../User Interaction/leaderboard.html">Leaderboard</a>
+            <a class = "navbarA" href="../Information Support/Info_Archives.html">Database</a>
+            <a class = "navbarA" href="../Direct Scam Protection/email-review.html">Review Emails</a>
+        </div>
+        <a class="login_button" href="User Interaction/login.html">Login</a>
+    </nav>
 
-
-    <!-- Chat/forum area container -->
+    <div style="background-color: #F0E0D6; display: flex; justify-content: center; align-items: center; gap: 20px; min-height: 85vh; margin: 0; padding: 100px 10px 10px 10px; box-sizing: border-box; overflow-x: hidden;">
+        <!-- Chat/forum area container -->
     <div style="border-radius: 5px; width: 50%; display: flex; flex-direction: column; align-items: center;">
         <!-- FORUM HEADER -->
         <h1 style="color: green; font-family: 'Inter', sans-serif; display: flex; align-items: center; justify-content: center;">FruadFiles Forum</h1>
@@ -120,7 +126,7 @@
     <!-- VIDEO LIBRARY INCORPERATED INTO FORUM -->
     <div style="width: 50%; display: flex; flex-direction: column; align-items: center; ">
         <!-- video-slots-container -->
-        <div style="width: 100%; max-width: 620px; height: 750px; overflow-y: scroll; overflow-x: hidden; margin-bottom: 20px;">>
+        <div style="width: 100%; max-width: 620px; height: 750px; overflow-y: scroll; overflow-x: hidden; margin-bottom: 20px;">
             <h1 style="color: darkgreen; font-family: 'Inter', sans-serif; display: flex; align-items: center; justify-content: center;">FruadFiles - Video Library</h1>
             <iframe width="600" height="315" src="https://www.youtube.com/embed/AaVO31VoViQ?si=kJyDSmqkaSi1iyo0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -137,6 +143,7 @@
                 <button type="file" style="background-color: #EDECE6; box-shadow: 10px 10px; font-size: larger; width: 225px; height: 75px; border: 2px solid; border-radius: 10px;">Submit a video to the Library</button>
             </a>
         </div>
+    </div>
     </div>
 </body>
 </html>
